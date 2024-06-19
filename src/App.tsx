@@ -1,9 +1,10 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Contato } from "./pages/Contato";
 import { Projetos } from "./pages/Projetos";
 import { createGlobalStyle } from "styled-components";
 import { useEffect, useState } from "react";
+import { DontExist } from "./pages/DontExist";
 
 interface IGlobal {
   color: string;
@@ -33,6 +34,7 @@ export const App = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/projetos" element={<Projetos />}></Route>
         <Route path="/contato" element={<Contato />}></Route>
+        <Route path="*" element={<DontExist />}></Route>
       </Routes>
     </>
   );
