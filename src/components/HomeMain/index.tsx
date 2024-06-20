@@ -20,8 +20,8 @@ export const HomeMain = () => {
             <h1>Vinícius Guarniéri Souza</h1>
             <h2>Desenvolvedor Web</h2>
             <IconsContainer>
-              <img src={linkedin} width={"20%"} alt="" />
-              <img src={github} width={"20%"} alt="" />
+              <a href="https://www.linkedin.com/in/vinicius-guarnieri-souza/" target="_blank"><img src={linkedin} alt="" /></a>
+              <a href="https://github.com/ViniGua06" target="_blank"><img src={github}  alt="" /></a>
             </IconsContainer>
           </TitleContainer>
         </FirstContainer>
